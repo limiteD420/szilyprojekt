@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background: #74a20c;
+    color:  #fff;
+    padding: 10px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3) ;
+    
+  }
+  header h1{
+      font-size: 25px;
+      font-weight: 700;
+
+  }
+  header nav{
+      text-align: right;
+  }
+
+  header nav a{
+      color: #fff;
+      margin-left: 15px;
+      display: inline-block;
+      padding: 10px 15px;
+      text-transform: uppercase ;   
+  }
+
+  header nav a:hover{
+      background: 537506 ;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  header.container-fluid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+  }
+
+  .main-image{
+      background: url('1.jpg');
+      background-size: cover;
+      text-align: center;
+      color: #fff;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      line-height: 1.7;
+      text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  }
+
+  .main-image .title{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+
+@media (max-width: 768px){
+    header h1,
+    header nav a {
+        text-align: center;
+        display: block;
+    }
+    header nav a {
+        background: 537506 ;
+        box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+        margin: 0 0 2px 0;
+    }
+    header h1 {
+        padding: 0 0 10px 0;
+    }
+}
+
+.box{
+    background: #f4f4f4;
+    padding: 20px;
+    color: #555;   
+    margin-top: 30px;
+    max-width: 300px;
+}
+
+.box h2 {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.product-description {
+    width: 100%; 
+    max-width: 250px; 
+    white-space: pre-wrap;
+}
+
+/* -------------------------------------
+    INVOICE
+    Styles for the billing table
+------------------------------------- */
+.invoice {
+    margin: 40px auto;
+    text-align: left;
+    width: 80%;
+}
+.invoice td {
+    padding: 5px 0;
+}
+.invoice .invoice-items {
+    width: 100%;
+}
+.invoice .invoice-items td {
+    border-top: #eee 1px solid;
+}
+.invoice .invoice-items .total td {
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    font-weight: 700;
+}
+
+.maintitle { 
+    font-size: 45px; 
+    letter-spacing: -1px; 
+    color: #399925; 
+    text-transform: uppercase; 
+    text-shadow: 2px 2px 0 #000;
+    margin: 10px 0 24px; 
+    text-align: center; 
+    line-height: 50px; 
+}
+
+.headertitle { 
+    font-size: 30px; 
+    letter-spacing: -1px; 
+    color: #399925; 
+    text-transform: uppercase; 
+    text-shadow: 3px 3px 0 #000;    
+    text-align: left; 
+    
+}
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+      
+  }
+  
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+.closebtn:hover {
+    color: black;
+  }
+
